@@ -1,0 +1,90 @@
+
+.bg-custom{
+  background-color: rgb(20, 119, 219);
+}
+
+.bg-cust{
+    background-color: #cfe2ff;
+  }
+.navbar-custom {
+  background-color: rgb(20, 119, 219);
+}
+/* Modify brand and text color */
+
+.navbar-custom 
+.navbar-custom .navbar-text {
+  color: rgb(20, 119, 219);
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: oblique;
+  font-weight: 500;
+}
+.navbar-brand{
+    color: #084298;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    font-weight: 600;
+}
+  
+.social {
+    color:white
+} 
+.social a {
+
+    font-size: 30px;
+    color: white;
+    border: solid 2.5px white;
+    border-radius: 5px;
+    width:auto;
+    margin-right:0.5vw;
+    border-color: white;
+  }
+.social a[name="fb"]:hover {
+    background-color: blue;
+    color: white;
+    width:auto;
+    -webkit-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+    -moz-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+    -o-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+    transition: background-color 0.6s ease-out, color 0.6s ease-out;
+  }
+.social a[name="yt"]:hover {
+    background-color: darkred;
+    color: white;
+    width:auto;
+    -webkit-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+    -moz-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+    -o-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+    transition: background-color 0.6s ease-out, color 0.6s ease-out;
+  }
+
+a.fa.fa-user {
+    font-size:1em; 
+    line-height: 24px;
+    position: relative;
+    padding-left: 0.1em;
+  }
+  
+.fa.fa-sign-in {
+    font-size:1.0em;
+    line-height: 24px;
+    position: relative;
+    padding-left: 0.1em;
+  }
+  
+.active a { 
+      display: inline-flex;
+      border-radius:3px;
+      top:auto;
+      vertical-align: middle;
+      background-color:#d8ecf4!important;
+    }
+
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    background-color: #d8ecf4;
+}
+@media print {
+  html, body {
+     display: none;  /* hide whole page */
+  }
+}
