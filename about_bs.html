@@ -76,8 +76,8 @@
                 <div class="row" > <!-- Inbody-->
                     <div class="col-12 ms-3 mt-4 me-0 px-0 py-0 mb-4" > 
                             <div class="hstack d-flex align-items-baseline"> <!-- the First hstack of the inbody-->
-                                <div class="col-9 bg-light px-4 py-4" style="border-radius:10px;" >
-                                  <div class=" col-12">
+                                <div class="col-sm-12 col-md-10 col-lg-9 col-xl-7 col-xxl-5 bg-light px-4 py-4" style="border-radius:10px;" >
+                                  <div class=" col">
                                         <div class="row bg-info text-bg-info py-3">
                                             <h3>
                                                 About
@@ -167,7 +167,8 @@
 
         
 <!-- ############################################################ -->
-    <div class="row" style="background-color:#0a58ca;"> <!-- Footer-->
+<div class="row" style="background-color:#0a58ca;"> <!-- Footer-->
+    <div class="col-lg-6 col-md-7 col-sm-9">
         <div class="vstack px-5 py-5">
             <div class="col">
                 <h1 style="color:white">contact</h1>
@@ -175,8 +176,8 @@
             <div class ="col">
                 <p style="color:white; font-weight:bold" >Email <a href="emailto:contact@piducation.com" style="text-decoration:none; color:lightsalmon ">contact@piducation.com</a></p>
             </div>
-            <div class="col">
-                <p style="color:white;text-align:justify;font-weight: bold; font-family: fantasy;width:45%">
+            <div class="col-12">
+                <p style="color:white;text-align:justify;font-weight: bold; font-family: fantasy">
                 Piducation honors students' honor code and academic integrity. We do not tolerate plagiarism and we do not provide solutions to assignments and homework. We provide solutions to problems that are not part of any assignment or homework.
                 </p>
             </div>
@@ -192,6 +193,7 @@
             </div>
         </div>
     </div>
+</div>
 
 </div>
 </div>
@@ -199,55 +201,55 @@
 
 
 <script type="text/javascript">
-    function mousehandler(e) {
-        var myevent = (isNS) ? e : event;
-        var eventbutton = (isNS) ? myevent.which : myevent.button;
-        if ((eventbutton == 2) || (eventbutton == 3)) return false;
+function mousehandler(e) {
+    var myevent = (isNS) ? e : event;
+    var eventbutton = (isNS) ? myevent.which : myevent.button;
+    if ((eventbutton == 2) || (eventbutton == 3)) return false;
+}
+document.oncontextmenu = mischandler;
+document.onmousedown = mousehandler;
+document.onmouseup = mousehandler;
+function disableCtrlKeyCombination(e) {
+    var forbiddenKeys = new Array("a", "s", "c", "x","u");
+    var key;
+    var isCtrl;
+    if (window.event) {
+        key = window.event.keyCode;
+        //IE
+        if (window.event.ctrlKey)
+            isCtrl = true;
+        else
+            isCtrl = false;
     }
-    document.oncontextmenu = mischandler;
-    document.onmousedown = mousehandler;
-    document.onmouseup = mousehandler;
-    function disableCtrlKeyCombination(e) {
-        var forbiddenKeys = new Array("a", "s", "c", "x","u");
-        var key;
-        var isCtrl;
-        if (window.event) {
-            key = window.event.keyCode;
-            //IE
-            if (window.event.ctrlKey)
-                isCtrl = true;
-            else
-                isCtrl = false;
-        }
-        else {
-            key = e.which;
-            //firefox
-            if (e.ctrlKey)
-                isCtrl = true;
-            else
-                isCtrl = false;
-        }
-        if (isCtrl) {
-            for (i = 0; i < forbiddenKeys.length; i++) {
-                //case-insensitive comparation
-                if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
-                    return false;
-                }
+    else {
+        key = e.which;
+        //firefox
+        if (e.ctrlKey)
+            isCtrl = true;
+        else
+            isCtrl = false;
+    }
+    if (isCtrl) {
+        for (i = 0; i < forbiddenKeys.length; i++) {
+            //case-insensitive comparation
+            if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
+                return false;
             }
         }
-        return true;
     }
+    return true;
+}
 </script>
 <script language="javascript">
-    var noPrint=true;
-    var noCopy=true;
-    var noScreenshot=true;
-    var autoBlur=true;
+var noPrint=true;
+var noCopy=true;
+var noScreenshot=true;
+var autoBlur=true;
 </script>
 
 
 <script type="text/javascript" src="noprint.js"></script> 
-    
+
 
 <body oncontextmenu="return false"></body>
 </body>
