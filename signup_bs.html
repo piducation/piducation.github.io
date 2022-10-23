@@ -155,94 +155,161 @@
 
 
         
-<!-- ############################################################ -->
-<div class="row" style="background-color:#0a58ca;"> <!-- Footer-->
-    <div class="col-lg-6 col-md-7 col-sm-9">
-        <div class="vstack px-5 py-5">
-            <div class="col">
-                <h1 style="color:white">contact</h1>
-            </div>
-            <div class ="col">
-                <p style="color:white; font-weight:bold" >Email <a href="emailto:contact@piducation.com" style="text-decoration:none; color:lightsalmon ">contact@piducation.com</a></p>
-            </div>
-            <div class="col-12">
-                <p style="color:white;text-align:justify;font-weight: bold; font-family: fantasy">
-                Piducation honors students' honor code and academic integrity. We do not tolerate plagiarism and we do not provide solutions to assignments and homework. We provide solutions to problems that are not part of any assignment or homework.
-                </p>
-            </div>
-            <div class="col px-2">
-                <div class="row social" >
-                    <!--   <a target = "blank" href = '#'><i class="fab fa-twitch"></i></a> -->
-                       <a target = "blank" name="yt" href ='https://youtube.com/channel/UCIh7uDOyyIlbKJDguNLMVwQ'><i class="fa fa-youtube-play"></i></a>
-                       <!-- <a target = "blank" href='#' ><i class="fab fa-twitter"></i></a> -->
-                       <a target = "blank" name = "fb" href='https://www.facebook.com/piducation'><i class='fa fa-facebook-official'></i></a>
-                    <!--   <a target = "blank" href='#'><i class='fab fa-instagram'></i></a>
-                      <a target="blank" href="#"> <i class="fab fa-discord"></i></a> -->
-                     </div> <!-- end tag of the social icons--> 
-            </div>
-            <div class="col text-light">
-                    Copyrights &copy; 2022 Piducation LTD. All rights reserved.
+            <footer class="bg-primary text-start  text-white py-4 ">
+                <div class="container col-12">
+                <div class="container-fluid float-start col-lg-6 col-md-7 col-sm-9">
+                    <div class=" p4-pb-0">
+                        <section >
+                           <h3 style=" font-weight: 600;"> Contact</h3> 
+                        </section>
+                        <section >
+                            <p style=" font-weight: 600;" >Email <a href="mailto:contact@piducation.com" style="text-decoration:none; color:lightsalmon ">contact@piducation.com</a></p>
+                        </section>
+                        <section>
+                            <p style="text-align:justify;font-weight: 600; font-family: fantasy">
+                                Piducation honors students' honor code and academic integrity. We do not tolerate plagiarism and we do not provide solutions to assignments and homework. We provide solutions to problems that are not part of any assignment or homework.
+                                </p>
+                        </section>
+                    </div>
+                    <!-- Grid container -->
+                    <div class=" g-0 ps-2 py-0 pb-0">
+                      <!-- Section: Social media -->
+                      <section class="mb-4">
+                        <!-- Youtube -->
+                        <a
+                           class="btn btn-primary btn-floating m-1"
+                           style="background-color: #dd4b39;"
+                           href="https://youtube.com/channel/UCIh7uDOyyIlbKJDguNLMVwQ"
+                           role="button"
+                           ><i class="fa fa-youtube-play"></i
+                          ></a>
+                        <!-- Facebook -->
+                        <a
+                           class="btn btn-primary btn-floating m-1"
+                           style="background-color: #3b5998;"
+                           href="https://www.facebook.com/piducation"
+                           role="button"
+                           ><i class="fa fa-facebook-f"></i
+                          ></a>
+                
+                        <!-- Twitter -->
+                        <!-- <a
+                           class="btn btn-primary btn-floating m-1"
+                           style="background-color: #55acee;"
+                           href="#!"
+                           role="button"
+                           ><i class="fa fa-twitter"></i
+                          ></a> -->
+                
+                        <!-- Google -->
+                        <a
+                           class="btn btn-primary btn-floating m-1"
+                           style="background-color: #dd4b39;"
+                           href="mailto:contact@piducation.com"
+                           role="button"
+                           ><i class="fa fa-google"></i
+                          ></a>
+                
+                        <!-- Instagram -->
+                        <!-- <a
+                           class="btn btn-primary btn-floating m-1"
+                           style="background-color: #ac2bac;"
+                           href="#!"
+                           role="button"
+                           ><i class="fa fa-instagram"></i
+                          ></a> -->
+                
+                        <!-- Linkedin -->
+                        <!-- <a
+                           class="btn btn-primary btn-floating m-1"
+                           style="background-color: #0082ca;"
+                           href="#!"
+                           role="button"
+                           ><i class="fa fa-linkedin"></i
+                          ></a> -->
+                        <!-- Github -->
+                        <!-- <a
+                           class="btn btn-primary btn-floating m-1"
+                           style="background-color: #333333;"
+                           href="#!"
+                           role="button"
+                           ><i class="fa fa-github"></i
+                          ></a> -->
+                      </section>
+                      <!-- Section: Social media -->
+                    </div>
+                    <!-- Grid container -->
+                
+                    <!-- Copyright -->
+                    
+                    <!-- Copyright -->
                 </div>
-        </div>
-    </div>
-</div>
-
-</div>
-</div>
-</div> <!-- closure tag for the whole row of the inboy-->
-
-
-<script type="text/javascript">
-function mousehandler(e) {
-    var myevent = (isNS) ? e : event;
-    var eventbutton = (isNS) ? myevent.which : myevent.button;
-    if ((eventbutton == 2) || (eventbutton == 3)) return false;
-}
-document.oncontextmenu = mischandler;
-document.onmousedown = mousehandler;
-document.onmouseup = mousehandler;
-function disableCtrlKeyCombination(e) {
-    var forbiddenKeys = new Array("a", "s", "c", "x","u");
-    var key;
-    var isCtrl;
-    if (window.event) {
-        key = window.event.keyCode;
-        //IE
-        if (window.event.ctrlKey)
-            isCtrl = true;
-        else
-            isCtrl = false;
-    }
-    else {
-        key = e.which;
-        //firefox
-        if (e.ctrlKey)
-            isCtrl = true;
-        else
-            isCtrl = false;
-    }
-    if (isCtrl) {
-        for (i = 0; i < forbiddenKeys.length; i++) {
-            //case-insensitive comparation
-            if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
-                return false;
-            }
-        }
-    }
-    return true;
-}
-</script>
-<script language="javascript">
-var noPrint=true;
-var noCopy=true;
-var noScreenshot=true;
-var autoBlur=true;
-</script>
-
-
-<script type="text/javascript" src="noprint.js"></script> 
-
-
-<body oncontextmenu="return false"></body>
-</body>
-</html>
+                <div class="container-fluid float-start text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                    © 2023 Copyright: <a class="text-white" href="https://piducation.com/">piducation.com</a>
+                </div>
+                </div>
+                
+              </footer>
+            
+            <!-- ############################################################ -->
+            
+            </div>
+            </div>
+            </div> <!-- closure tag for the whole row of the inboy-->
+            
+            
+            <script type="text/javascript">
+                function mousehandler(e) {
+                    var myevent = (isNS) ? e : event;
+                    var eventbutton = (isNS) ? myevent.which : myevent.button;
+                    if ((eventbutton == 2) || (eventbutton == 3)) return false;
+                }
+                document.oncontextmenu = mischandler;
+                document.onmousedown = mousehandler;
+                document.onmouseup = mousehandler;
+                function disableCtrlKeyCombination(e) {
+                    var forbiddenKeys = new Array("a", "s", "c", "x","u");
+                    var key;
+                    var isCtrl;
+                    if (window.event) {
+                        key = window.event.keyCode;
+                        //IE
+                        if (window.event.ctrlKey)
+                            isCtrl = true;
+                        else
+                            isCtrl = false;
+                    }
+                    else {
+                        key = e.which;
+                        //firefox
+                        if (e.ctrlKey)
+                            isCtrl = true;
+                        else
+                            isCtrl = false;
+                    }
+                    if (isCtrl) {
+                        for (i = 0; i < forbiddenKeys.length; i++) {
+                            //case-insensitive comparation
+                            if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
+                                return false;
+                            }
+                        }
+                    }
+                    return true;
+                }
+            </script>
+            <script language="javascript">
+                var noPrint=true;
+                var noCopy=true;
+                var noScreenshot=true;
+                var autoBlur=false;
+            </script>
+            
+            
+            <script type="text/javascript" src="noprint.js"></script> 
+                
+            
+            <body oncontextmenu="return false"></body>
+            </body>
+            </html>
+            
